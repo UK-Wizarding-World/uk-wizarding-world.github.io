@@ -16,8 +16,7 @@ app.get("/", async (req, res, next) => {
 app.use("/api", require('./routes/api.js'));
 
 const listener = app.listen(process.env.PORT, () => {
-    const open = require("open");
-    
-    open(`http://localhost:${listener.address().port}/api/economy`, "API FOR DEV", { app: 'chrome' });
+    //const open = require("open");
+    //open(`http://localhost:${listener.address().port}/api/economy`, "API FOR DEV", { app: 'chrome' });
     console.log("Your app is listening on port " + listener.address().port);
 })
