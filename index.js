@@ -10,8 +10,7 @@ app.use(cors()) // mainly security stuff
 
 app.get("/", async (req, res, next) => {
 
-    res.status(200).json({ "status": "OK", "version": 1 }
-)
+    res.status(200).json({ "status": "OK", "version": 1 })
 })
 
 app.use("/api", require('./routes/api.js'));
