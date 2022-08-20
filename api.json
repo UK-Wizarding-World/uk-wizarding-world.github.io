@@ -1,3 +1,1 @@
-{
-  "test": test;
-}
+{"status": "OK", "api_version": 1.0.0, "test_get": "OK"}
